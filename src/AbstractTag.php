@@ -464,7 +464,6 @@ abstract class AbstractTag
    *   t - text data
    *   j - json formatted data; will be returned as an array to the caller
    *   c - counter - can be set, reset, incremented and decremented
-   *   t - timed - can be set, reset, incremented and decremented. However, it will only return a tag if the time has not expired
    *
    * Ideally this data should be cached at least locally
    *
