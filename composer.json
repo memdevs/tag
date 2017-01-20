@@ -1,0 +1,22 @@
+{
+  "name": "memdevs/tag",
+  "description": "Ability to create tags and store in a data store. Includes ability to set custom data for tag. A tag can have multiple values.",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Steve Eriksen",
+      "email": "steve@membershipdevelopers.com"
+    }
+  ],
+  "require-dev": {
+    "aura/sql": "^2.0",
+    "beberlei/assert": "^2.3",
+    "nesbot/carbon": "^1.22"
+  },
+  "autoload": {
+    "psr-4": {
+      "memdevs\\tag\\": "src/"
+    }
+  }
+}
