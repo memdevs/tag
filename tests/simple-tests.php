@@ -276,7 +276,6 @@ function checkTag4()
       var_dump($tag->getTagValue($tag_id));
       print "<p><b>Uh, we shouldn't have reached this point!</b></p>";
     } catch (Exception $e) {
-      \Tracy\Debugger::fireLog($e);
       print "<p>Expected Exception! {$e->getMessage()}</p>";
     }
 
@@ -291,7 +290,6 @@ function checkTag4()
       var_dump($tag->getTagValue($tag_id));
       print "<p><b>Uh, we shouldn't have reached this point!</b></p>";
     } catch (Exception $e) {
-      \Tracy\Debugger::fireLog($e);
       print "<p>Expected Exception! {$e->getMessage()}</p>";
     }
 
@@ -379,7 +377,6 @@ function checkTag5()
       var_dump($tag->getTagValue($tag_id));
       print "<p><b>Uh, we shouldn't have reached this point!</b></p>";
     } catch (Exception $e) {
-      \Tracy\Debugger::fireLog($e);
       print "<p>Expected Exception! {$e->getMessage()}</p>";
     }
 
@@ -454,7 +451,6 @@ function checkTag6()
       $tag->updateTag($tag_id, 'A new value');
       print "<p><b>Uh, we shouldn't have reached this point!</b></p>";
     } catch (Exception $e) {
-      \Tracy\Debugger::fireLog($e);
       print "<p>Expected Exception! {$e->getMessage()}</p>";
     }
 
@@ -463,7 +459,6 @@ function checkTag6()
       $tag->deleteTag($tag_id);
       print "<p><b>Uh, we shouldn't have reached this point!</b></p>";
     } catch (Exception $e) {
-      \Tracy\Debugger::fireLog($e);
       print "<p>Expected Exception! {$e->getMessage()}</p>";
     }
 
