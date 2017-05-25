@@ -94,6 +94,15 @@ class AuraTag extends AbstractTag
 
 
   /**
+   * @return int
+   */
+  public function getExternalId()
+  {
+    return $this->external_id;
+  }
+
+
+  /**
    * @param string $prefix Ensure this is a sanitized value
    * @return $this
    */
@@ -110,7 +119,16 @@ class AuraTag extends AbstractTag
 
 
   /**
-   * Set's the PDO connection - in this case Aura's SQL library
+   * @return string
+   */
+  public function getTablePrefix()
+  {
+    return $this->table_prefix;
+  }
+
+
+  /**
+   * Set the PDO connection - in this case Aura's SQL library
    *
    * @param \Aura\Sql\ExtendedPdo $pdo
    * @return $this
@@ -124,6 +142,15 @@ class AuraTag extends AbstractTag
     }
 
     return $this;
+  }
+
+
+  /**
+   * @return ExtendedPdo
+   */
+  public function getPdo()
+  {
+    return $this->pdo;
   }
 
 

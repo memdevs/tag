@@ -92,6 +92,15 @@ class PDOTag extends AbstractTag
 
 
   /**
+   * @return int
+   */
+  public function getExternalId()
+  {
+    return $this->external_id;
+  }
+
+
+  /**
    * @param string $prefix Ensure this is a sanitized value
    * @return $this
    */
@@ -100,6 +109,15 @@ class PDOTag extends AbstractTag
     $this->table_prefix = $prefix ?: static::$default_table_prefix;
 
     return $this;
+  }
+
+
+  /**
+   * @return string
+   */
+  public function getTablePrefix()
+  {
+    return $this->table_prefix;
   }
 
 
@@ -167,7 +185,7 @@ class PDOTag extends AbstractTag
 
 
   /**
-   * Set's the PDO connection - in this case PDO library
+   * Set the PDO connection - in this case PDO library
    *
    * @param \PDO $pdo
    * @return $this
@@ -177,6 +195,15 @@ class PDOTag extends AbstractTag
     $this->pdo = $pdo ?: static::$default_pdo;
 
     return $this;
+  }
+
+
+  /**
+   * @return \PDO
+   */
+  public function getPdo()
+  {
+    return $this->pdo;
   }
 
 
